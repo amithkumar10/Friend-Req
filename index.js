@@ -5,8 +5,8 @@ var addFriend = document.querySelector("#add");
 var remove = document.querySelector("#remove");
 var msg = document.querySelector(".msg");
 var check = 0;
-var randi = "#";
-
+var randi =
+  "https://img.freepik.com/premium-vector/green-check-mark-icon-symbol-logo-circle-tick-symbol-green-color-vector-illustration_685751-503.jpg";
 addFriend.addEventListener("click", function () {
   if (check == 0) {
     isstatus.innerHTML = "Friend";
@@ -32,6 +32,8 @@ function helo() {
     msg.innerHTML = "No More Requests :(";
     element.classList.toggle("btncng");
     card.style.backgroundImage = "url(" + randi + ")";
+    card.style.backgroundSize = "cover";
+    card.style.backgroundPosition = "center";
   } else {
     isstatus.innerHTML = "Unknown";
     isstatus.style.color = "black";
